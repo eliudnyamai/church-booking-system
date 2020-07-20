@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+}
+.custom-navbar{
+    background-image: linear-gradient(to right, #2BA0CF , #6E3DCA); 
+    top: 0;
+  }
+  .logo{
+   margin: 0;
+   height: 60px;
+
+  }
+  .footer{
+   bottom: 0;   
+  }
