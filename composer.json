@@ -1,0 +1,7 @@
+{
+    "require": {
+        "africastalking/africastalking": "^2.4",
+        "setasign/fpdf": "1.8",
+        "johnathanmiller/secure-env-php": "^2.0"
+    }
+}
