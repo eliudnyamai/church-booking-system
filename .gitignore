@@ -1,3 +1,5 @@
 .env
 vendor/
 composer.lock
+.env.key
+.env.enc

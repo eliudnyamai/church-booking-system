@@ -1,5 +1,7 @@
 <?php
 use AfricasTalking\SDK\AfricasTalking;
+use SecureEnvPHP\SecureEnvPHP;
+(new SecureEnvPHP())->parse('../.env.enc', '../.env.key');
 include 'database.php';
 require_once '../vendor/setasign/fpdf/fpdf.php';
 class Crud extends Connection {
@@ -141,7 +143,7 @@ if($action->checkIfAllSessionFull()){
 public function sendSMS($message=array()){
     require '../vendor/autoload.php';
     $username = 'kasaraniAic'; 
-    $apiKey   = 'ea06313b6d8572832980b8d8e21b42cc36cd747b74c6a9ead36c5a2cf93067dd'; 
+    $apiKey   = getenv('AT_API_KEY');; 
     $AT       = new AfricasTalking($username, $apiKey);
     foreach($message as $key=> $value) {
         $phone= $key;
