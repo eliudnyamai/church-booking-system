@@ -202,8 +202,7 @@ function printTable( $data)
     $this->SetFillColor(224,235,255);
     $this->SetTextColor(0);
     $this->SetFont('');
-    // Data
-    $fill = false;
+s    $fill = false;
     $x=0;
     foreach($data as $row)
  
